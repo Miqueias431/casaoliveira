@@ -128,3 +128,7 @@ describe endereco;
 insert into endereco(tipologradouro,logradouro,numero,complemento,bairro,cep,cidade,estado)
 values("Avenida","Martha Gomes","1024","Quarteirão 2","Vila Joana","03425-012","Itapira","São Paulo");
 select * from endereco;
+
+insert into fornecedor(razaosocial,nomefantasia,cnpj,idcontato,idendereco)
+values("Industria Alimenticia","PepsiCO","40028922",4,4);
+select * from fornecedor;
