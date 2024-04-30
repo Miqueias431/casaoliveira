@@ -132,3 +132,14 @@ select * from endereco;
 insert into fornecedor(razaosocial,nomefantasia,cnpj,idcontato,idendereco)
 values("Industria Alimenticia","PepsiCO","40028922",4,4);
 select * from fornecedor;
+
+describe produto;
+
+insert into produto(nomeproduto,categoria,descricao,idfornecedor,preco)
+values("Refrigerante","Bebidas","Refrigerante tipo cola em lata 300ml",1,3.50),
+		("Salgadinho","Cereais","Salgadinho de churrasco Torcida",1,6);
+select * from produto;
+
+insert into contato(telefoneresidencial,telefonecelular,email)
+values("11-8596-7745","11-96584-5320","wagner@gmail.com");
+select * from contato;
