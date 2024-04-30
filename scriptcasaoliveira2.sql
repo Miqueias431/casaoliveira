@@ -118,3 +118,13 @@ describe funcionario;
 insert into funcionario(nomefuncionario,cpf,idcargo,expediente,idusuario,idendereco,idcontato)
 values("Thais Marcondo","5428464584","4","Segunda-Sexta:8h-18h",101,4,4);
 select * from funcionario;
+
+-- vamos inserir o contato do fornecedor PepsiCO
+insert into contato(telefonecomercial,telefonecelular,email)
+values("11-6658-5532","11-96581-8845","contato@pepisico.com.br");
+select * from contato;
+
+describe endereco;
+insert into endereco(tipologradouro,logradouro,numero,complemento,bairro,cep,cidade,estado)
+values("Avenida","Martha Gomes","1024","Quarteirão 2","Vila Joana","03425-012","Itapira","São Paulo");
+select * from endereco;
