@@ -74,3 +74,47 @@ select * from usuario;
 
 -- para apagar o registro iremos usar o comando DELETE
 delete from usuario where idusuario=4;
+
+-- selecionar a tabela de usuario
+select * from usuario;
+
+-- apagar todos o usuarios da tabela
+delete from usuario;
+
+-- inserir um novo usuario
+insert into usuario(idusuario,nomeusuario,senha,foto)
+values(100,"tadeu",sha1("tadeu"),"tadeu.jpg");
+
+insert into usuario(nomeusuario,senha,foto)
+values("thais",sha1("thais"),"thais.jpg");
+
+-- exibir o usuário cadastrado
+select * from usuario;
+
+-- descrever a tabela cargo
+describe cargo;
+
+-- inserir novo cargo
+insert into cargo(titulocargo,salario,departamento)
+values("Operardora de Caixa",2350.60,"Operacional");
+
+-- exibir o cargo cadastrado
+select * from cargo;
+
+-- descrevendo o contato
+describe contato;
+insert into contato(telefoneresidencial,telefonecelular,email)
+values("11-5606300","11-95845-7851","thais@gmail.com.br");
+select * from contato;
+
+-- describe endereco
+describe endereco;
+insert into endereco(tipologradouro,logradouro,numero,complemento,bairro,cep,cidade,estado)
+values("Rua","Marechal Trindade","12","Casa do Fundo","Jardim Alegre","03428-010","Leme","São Paulo");
+select * from endereco;
+
+-- exibir a estrutura da tabela funcionario
+describe funcionario;
+insert into funcionario(nomefuncionario,cpf,idcargo,expediente,idusuario,idendereco,idcontato)
+values("Thais Marcondo","5428464584","4","Segunda-Sexta:8h-18h",101,4,4);
+select * from funcionario;
