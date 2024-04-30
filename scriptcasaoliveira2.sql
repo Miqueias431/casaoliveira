@@ -1,3 +1,4 @@
+/*
 -- selecionar o banco de dados
 use casaoliveira;
 
@@ -46,4 +47,30 @@ describe funcionario;
 insert into funcionario(nomefuncionario,cpf,idcargo,expediente,idusuario,idendereco,idcontato)
 values("Vendedor","85796278",3,"Segunda a Sabado. 7h as 21h",3,3,3);
 select * from funcionario;
+*/
+use casaoliveira;
 
+-- exibir todos banscos de dados
+show databases;
+
+-- exibir todas as tabelas do banco de dados casa oliveira
+show tables;
+
+-- exibir a estrutura da tabela ususarios
+describe usuario;
+
+-- Inserir o usuário operador
+insert into usuario(nomeusuario,senha,foto)
+values("operador",sha1('123'),"operardor.jpg");
+
+-- exibir o usuário cadastrado
+select * from usuario;
+
+-- alterar a senha do operardor
+update usuario set senha=sha1("abc") where idusuario=4;
+
+-- selecionar a tabela de usuario
+select * from usuario;
+
+-- para apagar o registro iremos usar o comando DELETE
+delete from usuario where idusuario=4;
